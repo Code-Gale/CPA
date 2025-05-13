@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Earn With Forex Networking | No Experience Required</title>
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- AOS Animation Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<style>
+    /* Clean, professional styling with enhanced visuals */
+    :root {
+        --primary: #2a5298;
+        --secondary: #f5f8ff;
+        --dark: #1a3160;
+        --text: #333333;
+        --light-text: #666666;
+        --success: #27ae60;
+        --accent: #ff9500;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+        color: var(--text);
+        line-height: 1.6;
+        background-color: #fff;
+        overflow-x: hidden;
+    }
+    
+    .container {
+        max-width: 1140px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    
+    header {
+        padding: 20px 0;
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .logo {
+        font-weight: 700;
+        font-size: 24px;
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo i {
+        margin-right: 10px;
+        color: var(--accent);
+    }
+    
+    section {
+        padding: 80px 0;
+        position: relative;
+    }
+    
+    h1, h2, h3 {
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+    
+    h1 {
+        font-size: 46px;
+        color: var(--secondary);
+    }
+    
+    h2 {
+        font-size: 36px;
+        color: var(--dark);
+        position: relative;
+        padding-bottom: 15px;
+    }
+    
+    h2:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80px;
+        height: 4px;
+        background-color: var(--accent);
+    }
+    
+    .text-center h2:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    p {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    
+    .btn {
+        display: inline-block;
+        background-color: var(--primary);
+        color: white;
+        padding: 14px 28px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    
+    .btn:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: all 0.6s;
+        z-index: -1;
+    }
+    
+    .btn:hover:before {
+        left: 100%;
+    }
+    
+    .btn:hover {
+        background-color: var(--dark);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .hero {
+    background-image: url('image1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    }
+
+    .hero:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .hero-content {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        z-index: 2;
+        }
+    
+    .hero-text {
+        max-width: 600px;
+    }
+    .hero-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .hero-text p.subheading {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+    .hero-text .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-flex;
+        align-items: center;
+    }
+    .hero-text .btn i {
+        margin-left: 10px;
+    }
+    
+    .floating-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        animation: float 6s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+        100% { transform: translateY(0px); }
+    }
+    
+    .subheading {
+        color: var(--secondary);
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .stats-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .stat-box {
+        flex: 1;
+        min-width: 200px;
+        background: white;
+        border-radius: 8px;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+    }
+    
+    .stat-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    
+    .stat-number {
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 10px;
+        background: linear-gradient(90deg, var(--primary), var(--accent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .stat-label {
+        font-size: 16px;
+        color: var(--light-text);
+    }
+    
+    .steps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 40px 0;
+    }
+    
+    .step {
+        flex: 1;
+        min-width: 250px;
+        padding: 30px;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    
+    .step:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    
+    .step:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background-color: var(--primary);
+        z-index: -1;
+        transition: all 0.3s ease;
+    }
+    
+    .step:hover:before {
+        width: 100%;
+        opacity: 0.05;
+    }
+    
+    .step-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .step-icon {
+        font-size: 36px;
+        color: var(--accent);
+        margin-bottom: 15px;
+    }
+    
+    .benefits {
+        background: linear-gradient(135deg, var(--secondary) 0%, #e6eeff 100%);
+        position: relative;
+    }
+    
+    .benefits:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 300px;
+        background: url('/api/placeholder/300/300') no-repeat center;
+        opacity: 0.05;
+        background-size: contain;
+    }
+    
+    .benefit-item {
+        display: flex;
+        margin-bottom: 30px;
+        align-items: flex-start;
+        background-color: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+    }
+    
+    .benefit-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    .benefit-icon {
+        background-color: var(--success);
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+    
+    .testimonials {
+        text-align: center;
+        background-color: white;
+        position: relative;
+    }
+    
+    .testimonials-container {
+        display: flex;
+        gap: 30px;
+        overflow-x: auto;
+        padding: 30px 0;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .testimonials-container::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .testimonial {
+        min-width: 300px;
+        flex: 1;
+        padding: 30px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        position: relative;
+        text-align: left;
+        border-top: 4px solid var(--primary);
+    }
+    
+    .testimonial:before {
+        content: '\f10d';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        font-size: 30px;
+        color: var(--primary);
+        opacity: 0.1;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    
+    .testimonial p {
+        font-style: italic;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .testimonial-author {
+        display: flex;
+        align-items: center;
+    }
+    
+    .author-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+        overflow: hidden;
+    }
+    
+    .author-info h4 {
+        margin: 0;
+        font-size: 18px;
+    }
+    
+    .author-info small {
+        color: var(--light-text);
+    }
+    
+    .cta {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+        color: white;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .cta:before {
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: var(--accent);
+        opacity: 0.05;
+        border-radius: 50%;
+        top: -100px;
+        left: -100px;
+    }
+    
+    .cta:after {
+        content: '';
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: var(--accent);
+        opacity: 0.05;
+        border-radius: 50%;
+        bottom: -150px;
+        right: -150px;
+    }
+    
+    .cta h2 {
+        color: white;
+    }
+    
+    .cta h2:after {
+        background-color: white;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .cta .btn {
+        background-color: var(--accent);
+        color: white;
+        font-size: 20px;
+        padding: 16px 36px;
+    }
+    
+    .cta .btn:hover {
+        background-color: #ff8100;
+    }
+    
+    .social-proof {
+        text-align: center;
+        padding: 40px 0;
+        background-color: var(--secondary);
+    }
+    
+    .partners {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 30px;
+    }
+    
+    .partner {
+        opacity: 0.7;
+        transition: all 0.3s ease;
+        flex: 0 0 auto;
+    }
+    
+    .partner:hover {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    
+    .partner img {
+        height: 30px;
+        width: auto;
+    }
+    
+    footer {
+        background-color: var(--dark);
+        color: white;
+        padding: 50px 0 30px;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    
+    .footer-column {
+        flex: 1;
+        min-width: 200px;
+    }
+    
+    .footer-column h3 {
+        margin-bottom: 20px;
+        color: white;
+        font-size: 18px;
+    }
+    
+    .footer-links {
+        list-style: none;
+    }
+    
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+        color: rgba(255,255,255,0.7);
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+        color: white;
+    }
+    
+    .copyright {
+        border-top: 1px solid rgba(255,255,255,0.1);
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    
+    /* Progress counter section */
+    .counter-section {
+        padding: 40px 0;
+        background-color: white;
+    }
+    
+    .counter-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .counter {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .counter-value {
+        font-size: 42px;
+        font-weight: bold;
+        color: var(--primary);
+        margin-bottom: 10px;
+    }
+    
+    .counter-label {
+        font-size: 16px;
+        color: var(--light-text);
+    }
+    
+    /* Chart section */
+    .chart-section {
+        background-color: white;
+        padding: 80px 0;
+    }
+    
+    .chart-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    
+    .chart {
+        flex: 1;
+        min-width: 300px;
+        height: 300px;
+        background-color: var(--secondary);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    /* Progress bar animation */
+    .progress-container {
+        width: 100%;
+        background-color: #e9ecef;
+        border-radius: 4px;
+        margin: 10px 0 30px;
+    }
+    
+    .progress-bar {
+        height: 8px;
+        border-radius: 4px;
+        background: linear-gradient(90deg, var(--primary), var(--accent));
+        width: 0;
+        transition: width 1.5s ease-in-out;
+    }
+    
+    /* Pulse animation */
+    .pulse {
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    @media (max-width: 968px) {
+        .hero-content {
+            flex-direction: column;
+        }
+        
+        .hero-image {
+            order: -1;
+            margin-bottom: 30px;
+        }
+        
+        .chart-container {
+            flex-direction: column;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 36px;
+        }
+        
+        h2 {
+            font-size: 28px;
+        }
+        
+        .hero {
+            padding: 80px 0;
+        }
+        
+        .step {
+            min-width: 100%;
+        }
+        
+        .footer-content {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">ForexInsights</div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Learn How to Start Earning Through Forex – No Experience Needed</h1>
+                    <p class="subheading">Master the basics of Forex trading, connect with trusted brokers, and begin building your trading strategy.</p>
+                    <a href="#get-started" class="btn pulse">Get Started Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Statistics Section -->
+    <section class="counter-section">
+        <div class="container">
+            <div class="counter-container">
+                <div class="counter" data-aos="fade-up" data-aos-duration="800">
+                    <i class="fas fa-users fa-2x" style="color: var(--primary); margin-bottom: 15px;"></i>
+                    <div class="counter-value" id="traders-counter">0</div>
+                    <div class="counter-label">Traders Learning</div>
+                </div>
+                <div class="counter" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <i class="fas fa-globe fa-2x" style="color: var(--primary); margin-bottom: 15px;"></i>
+                    <div class="counter-value" id="countries-counter">0</div>
+                    <div class="counter-label">Countries Trading</div>
+                </div>
+                <div class="counter" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <i class="fas fa-dollar-sign fa-2x" style="color: var(--primary); margin-bottom: 15px;"></i>
+                    <div class="counter-value" id="trading-volume-counter">0</div>
+                    <div class="counter-label">Billion $ Traded</div>
+                </div>
+                <div class="counter" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <i class="fas fa-chart-line fa-2x" style="color: var(--primary); margin-bottom: 15px;"></i>
+                    <div class="counter-value" id="growth-counter">0</div>
+                    <div class="counter-label">Growth YoY</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- What Is Forex -->
+    <section>
+        <div class="container">
+            <div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+                <div class="col" style="flex: 1; min-width: 300px;" data-aos="fade-right" data-aos-duration="1000">
+                    <h2>What Is Forex Trading?</h2>
+                    <p>Forex trading involves buying and selling currencies in a global marketplace with the aim of making a profit. It's the largest financial market in the world, open 24 hours a day, 5 days a week.</p>
+                    <p>Whether you're a beginner or experienced, you can participate by using leverage to trade currencies, commodities, and other assets. Learning the ins and outs of Forex trading can lead to substantial profits, but it requires knowledge, strategy, and discipline.</p>
+                </div>
+                <div class="col" style="flex: 1; min-width: 300px;" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <img src="image-2.jpeg" alt="Forex trading explanation" style="width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Income Potential Chart -->
+    <section class="chart-section">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Your Earning Potential in Forex Trading</h2>
+            <p class="text-center" data-aos="fade-up" data-aos-delay="200">See how your trading can grow as you gain more experience and understand the market</p>
+    
+            <div class="chart-container">
+                <div class="chart" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="image3.jpeg" alt="Income growth chart" style="width: 100%; height: auto;">
+                </div>
+                <div class="chart-info" style="flex: 1; min-width: 300px;" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <h3>Monthly Earning Potential</h3>
+                    <p>Your income can scale based on your trading experience and strategies. Here's what many traders experience:</p>
+    
+                    <div style="margin: 30px 0;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span><strong>Small Investment</strong></span>
+                            <span>$50-100 / month</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 20%;" data-width="20%"></div>
+                        </div>
+    
+                        <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                            <span><strong>Moderate Investment</strong></span>
+                            <span>$500-1,000 / month</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 40%;" data-width="40%"></div>
+                        </div>
+    
+                        <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                            <span><strong>Advanced Trading</strong></span>
+                            <span>$5,000-10,000+ / month</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 75%;" data-width="75%"></div>
+                        </div>
+                    </div>
+    
+                    <p><i class="fas fa-info-circle"></i> Results vary based on market conditions, trading strategies, and experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section>
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">How Forex Trading Works – 3 Simple Steps</h2>
+    
+            <div class="steps">
+                <div class="step" data-aos="fade-up" data-aos-duration="800">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Understand the Fundamentals</h3>
+                    <p>Get familiar with Forex trading, including market trends, analysis methods, and trading terminology. We provide the resources to help you build a solid foundation.</p>
+                    <img src="3.jpg" alt="Learn the basics" style="width: 100%; border-radius: 8px; margin-top: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                </div>
+    
+                <div class="step" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><i class="fas fa-users-cog"></i></div>
+                    <h3>Select Your Broker</h3>
+                    <p>Choose from a curated list of trusted brokers that offer competitive spreads, low fees, and flexible leverage to suit your trading style.</p>
+                    <img src="4.jpg" alt="Choose a broker" style="width: 100%; border-radius: 8px; margin-top: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                </div>
+    
+                <div class="step" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Start Trading and Profit</h3>
+                    <p>Once you're set up, begin executing trades with your chosen broker. Monitor market conditions, apply your analysis, and adjust your strategy for better returns.</p>
+                    <img src="5.jpeg" alt="Start trading" style="width: 100%; border-radius: 8px; margin-top: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Benefits -->
+    <section id="benefits" class="section">
+        <div class="container">
+            <h2>Why Join Us?</h2>
+            <div class="benefit-cards">
+                <div class="card">
+                    <h3>Earn Passive Income</h3>
+                    <p>With Forex trading, you can start earning immediately. By partnering with brokers and utilizing your trading skills, you can create multiple streams of income.</p>
+                </div>
+                <div class="card">
+                    <h3>Low Entry Barriers</h3>
+                    <p>Start trading with a minimal investment. With low-cost entry points and educational resources, even beginners can join and thrive in the Forex market.</p>
+                </div>
+                <div class="card">
+                    <h3>Global Market Access</h3>
+                    <p>Forex trading gives you access to a global market. Trade 24/7 and explore opportunities across different time zones and currency pairs from around the world.</p>
+                </div>
+                <div class="card">
+                    <h3>Earn from Referrals</h3>
+                    <p>Share your referral link with others and earn commissions from their trades. The more active traders you refer, the more you earn!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>Step 1: Register with Us</h3>
+                    <p>Sign up and get access to our Forex trading platform. After registering, you’ll receive a referral link and exclusive access to Forex brokers.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 2: Start Trading</h3>
+                    <p>Begin your trading journey using your preferred strategy and trading pair. Whether you’re a beginner or experienced, we provide the tools to help you succeed.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 3: Share Your Link</h3>
+                    <p>Share your referral link with friends, family, or followers. Every time someone you refer starts trading, you earn commissions based on their trading volume.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 4: Earn & Withdraw</h3>
+                    <p>As your referrals trade, you accumulate earnings. Withdraw your profits easily and use them to scale your trading or invest in other opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="section cta">
+        <div class="container">
+            <h2>Ready to Start Earning?</h2>
+            <p>Join thousands of successful traders. Start your Forex journey today, refer others, and begin earning. The Forex market is open, and the opportunity is waiting.</p>
+            <a href="#get-started" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>What Our Traders Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"I started with little experience, but with the help of this platform, I’m now earning regularly from Forex trading. The referral program has been an amazing boost!"</p>
+                    <h4>John D.</h4>
+                    <p>Forex Trader</p>
+                </div>
+                <div class="testimonial">
+                    <p>"The process was simple, and the commissions are real! I referred a few friends, and my earnings have been increasing steadily every month."</p>
+                    <h4>Sarah K.</h4>
+                    <p>Forex Trader & Affiliate</p>
+                </div>
+                <div class="testimonial">
+                    <p>"I was skeptical at first, but after a few weeks of trading, I’ve seen great results. It’s a game-changer in my financial strategy!"</p>
+                    <h4>Michael T.</h4>
+                    <p>Forex Trader</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                
+            
+            <div class="copyright">
+                <p>© 2025 ForexPartners. All rights reserved.</p>
+                <p style="margin-top: 10px;">Important: Trading foreign exchange carries high risk and may not be suitable for all investors. Past performance is not indicative of future results.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- AOS Animation & jQuery Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            once: true,
+            disable: 'mobile'
+        });
+        
+        // Animate counter numbers
+        function animateCounter(elementId, targetValue, duration) {
+            let startTime = null;
+            const element = document.getElementById(elementId);
+            const startValue = 0;
+            
+            function updateCounter(timestamp) {
+                if (!startTime) startTime = timestamp;
+                const elapsed = timestamp - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const value = Math.floor(startValue + progress * (targetValue - startValue));
+                element.textContent = value + (elementId === 'growth-counter' ? '%' : '');
+                
+                if (progress < 1) {
+                    window.requestAnimationFrame(updateCounter);
+                }
+            }
+            
+            window.requestAnimationFrame(updateCounter);
+        }
+        
+        // Animate progress bars when visible
+        function animateProgressBars() {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            progressBars.forEach(bar => {
+                const width = bar.getAttribute('data-width');
+                bar.style.width = width;
+            });
+        }
+        
+        // Start animations when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add delay before starting counter animations
+            setTimeout(() => {
+                animateCounter('traders-counter', 3500, 2000);
+                animateCounter('countries-counter', 45, 2000);
+                animateCounter('trading-volume-counter', 12, 2000);
+                animateCounter('growth-counter', 78, 2000);
+            }, 500);
+            
+            // Animate progress bars
+            animateProgressBars();
+        });
+    </script>
+
+</body>
+</html>
